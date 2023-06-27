@@ -1,3 +1,8 @@
-fetch("https://picsum.photos/v2/list")
-    .then(reponse => reponse.json())
-    .then(reponse2 => console.log(reponse.url))
+const url = "https://picsum.photos/v2/list";
+
+fetch(url)
+    .then((response) => response.json())
+    .then((data) => {
+        console.log(data)
+    });
+
